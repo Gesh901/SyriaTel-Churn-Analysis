@@ -1,6 +1,6 @@
 # SyriaTel-Churn-Analysis
 
-![Title Image](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/Churn_101.jpg)
+![Title Image](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/images/Churn_101.jpg)
 
 ## Business Overview
 
@@ -69,15 +69,15 @@ Given this is a classification problem, the analysus uses Logistic regression an
 
 The model evaluation findings have been compiled and plotted to get a better view of how the models compare against each other as well as against our success metrics as shown in the bar plot.
 
-![Evaluation of models](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/output_110_0.png)
+![Evaluation of models](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/images/output_110_0.png)
 
   
 From the analysis, decision tree models perform better than the logistic regression models. Additional check is how the models performed against our metrics of success:
- - Accuracy of between 75% and 85% is desired: All the models evaluated were able to meet this threshold
- - Precision of between 50% and 60% is desired: Only the baseline logistic model and the decision tree models met this threshold. The baseline logistic regression model was within this range while both decision tree models (unpruned and pruned) were able to surpass it.
- - Recall of between 60% and 70% is desired. All the models were able to meet this criterion except the baseline logistic regression model. Logistic models containing tuned hyper parameters performed the best i.e. model with alternative solver, model with balanced weights and model with less regularization
- - F1 score of between 0.55 and 0.65 is highly desirable: Only the decision tree models were able to meet this criterion. Due to the precision scores being low, all logistic regression models had a F1 score less than 0.5
- - Area under the curve (AUC): A higher result indicates a more accurate model performance. The pruned decision tree had the highest AUC. However, the differences observed across all models evaluated was quite minimal.
+ - **Accuracy** of between 75% and 85% is desired: All the models evaluated were able to meet this threshold
+ - **Precision** of between 50% and 60% is desired: Only the baseline logistic model and the decision tree models met this threshold. The baseline logistic regression model was within this range while both decision tree models (unpruned and pruned) were able to surpass it.
+ - **Recall** of between 60% and 70% is desired. All the models were able to meet this criterion except the baseline logistic regression model. Logistic models containing tuned hyper parameters performed the best i.e. model with alternative solver, model with balanced weights and model with less regularization
+ - **F1 score** of between 0.55 and 0.65 is highly desirable: Only the decision tree models were able to meet this criterion. Due to the precision scores being low, all logistic regression models had a F1 score less than 0.5
+ - **Area under the curve (AUC)**: A higher result indicates a more accurate model performance. The pruned decision tree had the highest AUC. However, the differences observed across all models evaluated was quite minimal.
 
 Taking all this account, the pruned decision tree model meets all the metrics of success. It strikes a balance across precision and recall. Thus, it will be able to give a balanced view of customers who will churn as well as those who will not churn. Also, the accuracy score and the AUC is the highest making it the model that has the most accurate predictive performance.
 
