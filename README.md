@@ -1,6 +1,6 @@
 # SyriaTel-Churn-Analysis
 
-![Title Image](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/Churn.jpeg)
+![Title Image](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/Churn_101.jpg)
 
 ## Business Overview
 
@@ -35,27 +35,27 @@ The chosen predictive model will be evaluated agains the following metrics. Thes
  
  The SyriaTel dataset used in this analysis is sourced from Kaggle (https://www.kaggle.com/) and contains records of SyriaTel customers. The dataset contains 3,333 rows with each row representing a customer record. 
 In addition, the dataset has twenty-one columns which broken down as follows:
- - i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
-  - a.	Usage during the day - `total day minutes`, `total day calls`, `total day charge`
-  - b.	Usage during the evening - `total eve minutes`, `total eve calls`, `total eve charge`
-  - c.	Usage at night - `total night minutes`, `total night calls`, `total night charge`
-  - d.	No of voicemail messages - `number vmail messages`
- - ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
-  - a.	`international plan`
-  - b.	`voice mail plan`
- - iii.	Unique customer details. The columns falling under this section are:
-  - a.	`state`
-  - b.	`account length`
-  - c.	`area code`
-  - d.	`phone number`
- - iv.	International phone usage/customer service: The columns under this category include:
-  - a.	`total intl calls`
-  - b.	`total intl minutes`
-  - c.	`total intl charge`
-  - d.	`customer service calls`
- - v.	Likelihood of churn: Column `churn` which takes on two values:
-  - a.	True – Customer has churned.
-  - b.	False – Customer is yet to churn.
+ * Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
+ - Usage during the day - `total day minutes`, `total day calls`, `total day charge`
+ - Usage during the evening - `total eve minutes`, `total eve calls`, `total eve charge`
+ - Usage at night - `total night minutes`, `total night calls`, `total night charge`
+ - No of voicemail messages - `number vmail messages`
+ * Plan subscription: These columns give us a view of the plans that each of the customer has:
+ - `international plan`
+ - `voice mail plan`
+ * Unique customer details. The columns falling under this section are:
+ - `state`
+ - `account length`
+ - `area code`
+ - `phone number`
+ * International phone usage/customer service: The columns under this category include:
+ - `total intl calls`
+ - `total intl minutes`
+ - `total intl charge`
+ - `customer service calls`
+ * Likelihood of churn: Column `churn` which takes on two values:
+ - True – Customer has churned.
+ - False – Customer is yet to churn.
 
 
 ## Exploratory Data Analysis
