@@ -1,6 +1,6 @@
 # SyriaTel-Churn-Analysis
 
-![Title Image](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/Churn_101_2.jpg)
+![Title Image](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/Churn_101.jpg)
 
 ## Business Overview
 
