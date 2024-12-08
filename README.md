@@ -35,27 +35,27 @@ The chosen predictive model will be evaluated agains the following metrics. Thes
  
  The SyriaTel dataset used in this analysis is sourced from Kaggle (https://www.kaggle.com/) and contains records of SyriaTel customers. The dataset contains 3,333 rows with each row representing a customer record. 
 In addition, the dataset has twenty-one columns which broken down as follows:
- -i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
-  -a.	Usage during the day - `total day minutes`, `total day calls`, `total day charge`
-  -b.	Usage during the evening - `total eve minutes`, `total eve calls`, `total eve charge`
-  -c.	Usage at night - `total night minutes`, `total night calls`, `total night charge`
-  -d.	No of voicemail messages - `number vmail messages`
- -ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
-  -a.	`international plan`
-  -b.	`voice mail plan`
- -iii.	Unique customer details. The columns falling under this section are:
-  -a.	`state`
-  -b.	`account length`
-  -c.	`area code`
-  -d.	`phone number`
- -iv.	International phone usage/customer service: The columns under this category include:
-  -a.	`total intl calls`
-  -b.	`total intl minutes`
-  -c.	`total intl charge`
-  -d.	`customer service calls`
- -v.	Likelihood of churn: Column `churn` which takes on two values:
-  -a.	True – Customer has churned.
-  -b.	False – Customer is yet to churn.
+ - i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
+  - a.	Usage during the day - `total day minutes`, `total day calls`, `total day charge`
+  - b.	Usage during the evening - `total eve minutes`, `total eve calls`, `total eve charge`
+  - c.	Usage at night - `total night minutes`, `total night calls`, `total night charge`
+  - d.	No of voicemail messages - `number vmail messages`
+ - ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
+  - a.	`international plan`
+  - b.	`voice mail plan`
+ - iii.	Unique customer details. The columns falling under this section are:
+  - a.	`state`
+  - b.	`account length`
+  - c.	`area code`
+  - d.	`phone number`
+ - iv.	International phone usage/customer service: The columns under this category include:
+  - a.	`total intl calls`
+  - b.	`total intl minutes`
+  - c.	`total intl charge`
+  - d.	`customer service calls`
+ - v.	Likelihood of churn: Column `churn` which takes on two values:
+  - a.	True – Customer has churned.
+  - b.	False – Customer is yet to churn.
 
 
 ## Exploratory Data Analysis
@@ -92,8 +92,9 @@ Below are the business recommendations for SyriaTel based on the analysis perfor
 This analysis looked at SyriaTel customer data to determine a predictive customer churn model. In addition, customer's patterns have been studied to determine the reason behind customers leaving and ways in which this can be mitigated. The pruned decision tree model has been found to be the best predictive model for the data analysed as it gives the most accurate and balanced view of when a customer will churn. Moreover, customers in SyriaTel churned because of high calling charges as well as poor customer service. It is imperative for the company to offer deals in the form of discounts to customers who call much more often and improve their customer service by training their customer service agents.
 
 ## Next Steps
-Deployment of the model to end users is the next step. The model will be exported into a format suitable for integration through embedding it into a software application (such as web or mobile application) where end users can input their data and receive predictions.
-Other sophisticated models need to be considered such as Random Forest, XG Boost to get better predictive performance. In addition, a much bigger dataset should be sought to increase the training and predictive power of the models.
+- Deployment of the model to end users is the next step. The model will be exported into a format suitable for integration through embedding it into a software application (such as web or mobile application) where end users can input their data and receive predictions.
+
+- Other sophisticated models need to be considered such as Random Forest, XG Boost to get better predictive performance. In addition, a much bigger dataset should be sought to increase the training and predictive power of the models.
 
 
 
