@@ -33,27 +33,27 @@ The chosen predictive model will be evaluated agains the following metrics. Thes
  
  The SyriaTel dataset used in this analysis is sourced from Kaggle (https://www.kaggle.com/) and contains records of SyriaTel customers. The dataset contains 3,333 rows with each row representing a customer record. 
 In addition, the dataset has twenty-one columns which broken down as follows:
-    i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
-        a.	Usage during the day - total day minutes, total day calls, total day charge
-        b.	Usage during the evening - total eve minutes, total eve calls, total eve charge
-        c.	Usage at night - total night minutes, total night calls, total night charge
-        d.	No of voicemail messages
-    ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
-        a.	International Plan
-        b.	Voice mail Plan
-    iii.	Unique customer details. The columns falling under this section are:
-        a.	State
-        b.	Account length
-        c.	Area code
-        d.	Phone Number
-    iv.	International phone usage/customer service: The columns under this category include:
-        a.	Total intl calls
-        b.	Total intl minutes
-        c.	Total intl charge
-        d.	Customer Service Calls
+-  i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
+        - a.	Usage during the day - total day minutes, total day calls, total day charge
+        - b.	Usage during the evening - total eve minutes, total eve calls, total eve charge
+        - c.	Usage at night - total night minutes, total night calls, total night charge
+        - d.	No of voicemail messages
+- ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
+        - a.	International Plan
+        - b.	Voice mail Plan
+- iii.	Unique customer details. The columns falling under this section are:
+        - a.	State
+        - b.	Account length
+        - c.	Area code
+        - d.	Phone Number
+ - iv.	International phone usage/customer service: The columns under this category include:
+        - a.	Total intl calls
+        - b.	Total intl minutes
+        - c.	Total intl charge
+        - d.	Customer Service Calls
     v.	Likelihood of churn: Column Churn which takes on two values:
-        a.	True – Customer has churned.
-        b.	False – Customer is yet to churn.
+        - a.	True – Customer has churned.
+        - b.	False – Customer is yet to churn.
 
 ## Exploratory Data Analysis
 Exploratory data analysis was done to get further insights on SyriaTel customer behaviour as well as check which columns will be suitable to function as features and target variables while building the predictive model. The exploratory data analysis is divided into three sections:
