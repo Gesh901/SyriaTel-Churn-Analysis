@@ -16,7 +16,7 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 def load_data(data):
     """
-    Loads the data and saves the data as a datframe
+    Loads the data and saves the data as a dataframe
     
     Parameter: The path of the data to be loaded
     
