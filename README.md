@@ -1,5 +1,7 @@
 # SyriaTel-Churn-Analysis
 
+![Title Image](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/Churn.jpeg)
+
 ## Business Overview
 
 Customer churn analysis has recently become increasingly important in the ever evolving and competitive telecommunication industry. Customer churn analysis involves the study of customer behaviour to identify patterns and factors that lead to customers leaving their providers. As the cost of getting a new customer is five to twenty-five times more than keeping an existing customer, telecommunication as well as mobile operators see the need to pay more attention to retaining existing customers to increase their revenues.
@@ -33,27 +35,28 @@ The chosen predictive model will be evaluated agains the following metrics. Thes
  
  The SyriaTel dataset used in this analysis is sourced from Kaggle (https://www.kaggle.com/) and contains records of SyriaTel customers. The dataset contains 3,333 rows with each row representing a customer record. 
 In addition, the dataset has twenty-one columns which broken down as follows:
--  i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
-        - a.	Usage during the day - total day minutes, total day calls, total day charge
-        - b.	Usage during the evening - total eve minutes, total eve calls, total eve charge
-        - c.	Usage at night - total night minutes, total night calls, total night charge
-        - d.	No of voicemail messages
-- ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
-        - a.	International Plan
-        - b.	Voice mail Plan
-- iii.	Unique customer details. The columns falling under this section are:
-        - a.	State
-        - b.	Account length
-        - c.	Area code
-        - d.	Phone Number
- - iv.	International phone usage/customer service: The columns under this category include:
-        - a.	Total intl calls
-        - b.	Total intl minutes
-        - c.	Total intl charge
-        - d.	Customer Service Calls
-    v.	Likelihood of churn: Column Churn which takes on two values:
-        - a.	True – Customer has churned.
-        - b.	False – Customer is yet to churn.
+ -i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
+  -a.	Usage during the day - `total day minutes`, `total day calls`, `total day charge`
+  -b.	Usage during the evening - `total eve minutes`, `total eve calls`, `total eve charge`
+  -c.	Usage at night - `total night minutes`, `total night calls`, `total night charge`
+  -d.	No of voicemail messages - `number vmail messages`
+ -ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
+  -a.	`international plan`
+  -b.	`voice mail plan`
+ -iii.	Unique customer details. The columns falling under this section are:
+  -a.	`state`
+  -b.	`account length`
+  -c.	`area code`
+  -d.	`phone number`
+ -iv.	International phone usage/customer service: The columns under this category include:
+  -a.	`total intl calls`
+  -b.	`total intl minutes`
+  -c.	`total intl charge`
+  -d.	`customer service calls`
+ -v.	Likelihood of churn: Column `churn` which takes on two values:
+  -a.	True – Customer has churned.
+  -b.	False – Customer is yet to churn.
+
 
 ## Exploratory Data Analysis
 Exploratory data analysis was done to get further insights on SyriaTel customer behaviour as well as check which columns will be suitable to function as features and target variables while building the predictive model. The exploratory data analysis is divided into three sections:
@@ -64,11 +67,12 @@ Exploratory data analysis was done to get further insights on SyriaTel customer 
 ## Model Building and Evaluation:
 Given this is a classification problem, the analysus uses Logistic regression and Decision Tree algorithms to build the predictive model. The approach will be to start with a baseline model and refine it to get the model with the best performance. Metrics for evaluation used will be precision, recall, accuracy, F1 score and AUC score.
 
-The model evaluation findings have been compiled and plotted to get a better view of how the models compare against each other as well as against our success metrics.
+The model evaluation findings have been compiled and plotted to get a better view of how the models compare against each other as well as against our success metrics as shown in the bar plot.
 
- 
- 
-From the bar graph above, decision tree models perform better than the logistic regression models. Additional check is how the models performed against our metrics of success:
+![Evaluation of models](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/output_110_0.png)
+
+  
+From the analysis, decision tree models perform better than the logistic regression models. Additional check is how the models performed against our metrics of success:
  - Accuracy of between 75% and 85% is desired: All the models evaluated were able to meet this threshold
  - Precision of between 50% and 60% is desired: Only the baseline logistic model and the decision tree models met this threshold. The baseline logistic regression model was within this range while both decision tree models (unpruned and pruned) were able to surpass it.
  - Recall of between 60% and 70% is desired. All the models were able to meet this criterion except the baseline logistic regression model. Logistic models containing tuned hyper parameters performed the best i.e. model with alternative solver, model with balanced weights and model with less regularization
