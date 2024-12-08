@@ -33,27 +33,27 @@ The chosen predictive model will be evaluated agains the following metrics. Thes
  
  The SyriaTel dataset used in this analysis is sourced from Kaggle (https://www.kaggle.com/) and contains records of SyriaTel customers. The dataset contains 3,333 rows with each row representing a customer record. 
 In addition, the dataset has twenty-one columns which broken down as follows:
-i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
-a.	Usage during the day - total day minutes, total day calls, total day charge
-b.	Usage during the evening - total eve minutes, total eve calls, total eve charge
-c.	Usage at night - total night minutes, total night calls, total night charge
-d.	No of voicemail messages
-ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
-a.	International Plan
-b.	Voice mail Plan
-iii.	Unique customer details. The columns falling under this section are:
-a.	State
-b.	Account length
-c.	Area code
-d.	Phone Number
-iv.	International phone usage/customer service: The columns under this category include:
-a.	Total intl calls
-b.	Total intl minutes
-c.	Total intl charge
-d.	Customer Service Calls
-v.	Likelihood of churn: Column Churn which takes on two values:
-a.	True – Customer has churned.
-b.	False – Customer is yet to churn.
+    i.	Customer usage: The following columns provide further insight to the customer phone usage based on time of day:
+        a.	Usage during the day - total day minutes, total day calls, total day charge
+        b.	Usage during the evening - total eve minutes, total eve calls, total eve charge
+        c.	Usage at night - total night minutes, total night calls, total night charge
+        d.	No of voicemail messages
+    ii.	Plan subscription: These columns give us a view of the plans that each of the customer has:
+        a.	International Plan
+        b.	Voice mail Plan
+    iii.	Unique customer details. The columns falling under this section are:
+        a.	State
+        b.	Account length
+        c.	Area code
+        d.	Phone Number
+    iv.	International phone usage/customer service: The columns under this category include:
+        a.	Total intl calls
+        b.	Total intl minutes
+        c.	Total intl charge
+        d.	Customer Service Calls
+    v.	Likelihood of churn: Column Churn which takes on two values:
+        a.	True – Customer has churned.
+        b.	False – Customer is yet to churn.
 
 ## Exploratory Data Analysis
 Exploratory data analysis was done to get further insights on SyriaTel customer behaviour as well as check which columns will be suitable to function as features and target variables while building the predictive model. The exploratory data analysis is divided into three sections:
@@ -69,18 +69,19 @@ The model evaluation findings have been compiled and plotted to get a better vie
  
  
 From the bar graph above, decision tree models perform better than the logistic regression models. Additional check is how the models performed against our metrics of success:
-•	Accuracy of between 75% and 85% is desired: All the models evaluated were able to meet this threshold
-•	Precision of between 50% and 60% is desired: Only the baseline logistic model and the decision tree models met this threshold. The baseline logistic regression model was within this range while both decision tree models (unpruned and pruned) were able to surpass it.
-•	Recall of between 60% and 70% is desired. All the models were able to meet this criterion except the baseline logistic regression model. Logistic models containing tuned hyper parameters performed the best i.e. model with alternative solver, model with balanced weights and model with less regularization
-•	F1 score of between 0.55 and 0.65 is highly desirable: Only the decision tree models were able to meet this criterion. Due to the precision scores being low, all logistic regression models had a F1 score less than 0.5
-•	Area under the curve (AUC): A higher result indicates a more accurate model performance. The pruned decision tree had the highest AUC. However, the differences observed across all models evaluated was quite minimal.
+ - Accuracy of between 75% and 85% is desired: All the models evaluated were able to meet this threshold
+ - Precision of between 50% and 60% is desired: Only the baseline logistic model and the decision tree models met this threshold. The baseline logistic regression model was within this range while both decision tree models (unpruned and pruned) were able to surpass it.
+ - Recall of between 60% and 70% is desired. All the models were able to meet this criterion except the baseline logistic regression model. Logistic models containing tuned hyper parameters performed the best i.e. model with alternative solver, model with balanced weights and model with less regularization
+ - F1 score of between 0.55 and 0.65 is highly desirable: Only the decision tree models were able to meet this criterion. Due to the precision scores being low, all logistic regression models had a F1 score less than 0.5
+ - Area under the curve (AUC): A higher result indicates a more accurate model performance. The pruned decision tree had the highest AUC. However, the differences observed across all models evaluated was quite minimal.
+
 Taking all this account, the pruned decision tree model meets all the metrics of success. It strikes a balance across precision and recall. Thus, it will be able to give a balanced view of customers who will churn as well as those who will not churn. Also, the accuracy score and the AUC is the highest making it the model that has the most accurate predictive performance.
 
 ## Recommendation
 Below are the business recommendations for SyriaTel based on the analysis performed:
-•	SyriaTel should go for the pruned decision tree model when predicting whether a customer will churn. It will be able to give the most accurate predictive view of customers who will churn. This model provides a balanced view across all the evaluation metrics, and it is easy to interpret the model results to stakeholders in the company.
-•	Key factors making customers leave SyriaTel are high international calling charges, day charges and poor customer service. Customers who left made the highest number of day and international calls, but their charges were still quite high. In addition, customers who made more calls to customer service were more likely to leave as opposed to those who did not.
-•	SyriaTel can reduce customer churn by reducing their day and international calling charges as they seem to be highly uncompetitive. They could produce discount schemes to reward customers who call more often. It should also improve on their customer service through training of its customer care agents. Finally, it should improve its service in general across the board to ensure calls by customers to customer care are reduced to a minimum.
+ - SyriaTel should go for the pruned decision tree model when predicting whether a customer will churn. It will be able to give the most accurate predictive view of customers who will churn. This model provides a balanced view across all the evaluation metrics, and it is easy to interpret the model results to stakeholders in the company.
+ - Key factors making customers leave SyriaTel are high international calling charges, day charges and poor customer service. Customers who left made the highest number of day and international calls, but their charges were still quite high. In addition, customers who made more calls to customer service were more likely to leave as opposed to those who did not.
+ - SyriaTel can reduce customer churn by reducing their day and international calling charges as they seem to be highly uncompetitive. They could produce discount schemes to reward customers who call more often. It should also improve on their customer service through training of its customer care agents. Finally, it should improve its service in general across the board to ensure calls by customers to customer care are reduced to a minimum.
 
 
 ## Conclusion
