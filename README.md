@@ -17,7 +17,7 @@ SyriaTel, a telecommunications company in Syria, would like to predict whether a
 ## Objectives
 
 Objectives for this analysis are as set out below:
- - Build a predictive model that has shows whether a customer will churn based on the customer data
+ - Build a predictive model that shows whether a customer will churn based on the customer data
  - Identify the key factors affecting customer churn amongst SyriaTel customers
  - Identify what aspects of SyriaTel services need more prioritization to prevent customer churn.
 
