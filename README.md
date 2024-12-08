@@ -69,7 +69,7 @@ Given this is a classification problem, the analysus uses Logistic regression an
 
 The model evaluation findings have been compiled and plotted to get a better view of how the models compare against each other as well as against our success metrics as shown in the bar plot.
 
-![Evaluation of models](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/images/output_110_0.png)
+![Evaluation of models](https://github.com/Gesh901/SyriaTel-Churn-Analysis/blob/master/images/output_110_1.png)
 
   
 From the analysis, decision tree models perform better than the logistic regression models. Additional check is how the models performed against our metrics of success:
